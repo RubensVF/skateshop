@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: bugfix infinite 1s;
+    -webkit-animation: bugfix infinite 1s;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-button {
+    cursor: pointer;
+    position: absolute;
+    right: 8vw;
+}
+
+#menu {
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#menu ul li {
+    padding: 1em;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#menu ul li a:hover {
+    color: #333332;
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.textContainer {
+    max-width: 500px;
+    margin: 30vh 10vw;
+}
+
+.hero-text-primary {
+    margin-bottom: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 88px;
+    /* or 110% */
+    letter-spacing: -0.02em;
+    /* Global/white */
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-text-secondary {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 88px;
+    /* or 110% */
+    z-index: 1;
+    position: relative;
+    letter-spacing: -0.02em;
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: transparent;
+}
+
+.cuztomizeContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Controls {
+    padding-top: 100px;
+    width: 50vw;
+    background-color: black;
+    /* input/placeholder */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: white;
+}
+
+.wheelPicker {
+    width: 80%;
+    margin: 10px 10%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background: #54595F;
+    /* Global/text */
+    border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.wheelPicker span {
+    /* input/placeholder */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* or 103% */
+    display: flex;
+    align-items: center;
+    /* Global/text */
+    color: white;
+    padding-left: 4px;
+}
+
+input[type='color'] {
+    padding: 0;
+    width: 150%;
+    height: 150%;
+    margin: -25%;
+}
+
+.cp_wrapper {
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+    /* optional formatting below here */
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 0px grey;
+    margin: 4px;
+}
+
+.custom-file-input {
+    margin-left: 40%;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Choose background';
+    display: inline-block;
+    background: #6C5CCC;
+    border-radius: 30px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.custom-file-input:hover::before {
+    border-color: black;
+}
+
+.custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.recentskates {
+    margin-top: 100vh;
+    padding: 10px 160px;
+}
+
+.recentskates h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 47px;
+    /* or 123% */
+    /* Global/black */
+    color: #000000;
+}
+
+.recentskates-text-container {
+    display: flex;
+}
+
+.recentskates-text-container p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height, or 114% */
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    /* Global/primary */
+    color: #6C5CCC;
+}
+
+.line {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 81px;
+    height: 0px;
+    /* Global/primary */
+    background: #6C5CCC;
+    /* Global/primary */
+    border: 1px solid #6C5CCC;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 373.33px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 15px 0px 14px;
+    background: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 344.33px;
+    height: 280px;
+}
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+    height: 252px;
+    background-color: #FAFAFA;
+}
+
+.card-primary-text {
+    width: 284.33px;
+    height: 24px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+    text-align: center;
+    text-transform: uppercase;
+    /* Global/text */
+    color: #7A7A7A;
+}
+
+.card-secondary-text {
+    width: 284.33px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    /* or 145% */
+    text-align: center;
+    letter-spacing: 1.2px;
+    /* Global/black */
+    color: #000000;
+}
+
+.card a {
+    width: 261px;
+    height: 22px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    text-align: center;
+    letter-spacing: 1.2px;
+    text-decoration-line: underline;
+    /* Global/text */
+    color: #7A7A7A;
+}
+
+.controlsContainer {
+    padding: 50px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: #060606;
+    width: auto;
+    padding: 8% 18%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height, or 148% */
+    letter-spacing: 0.04em;
+    /* Global/text */
+    color: #7A7A7A;
+}
+
+@media (max-width: 700px) {
+    .hero-text-primary {
+        font-size: 40px;
+        width: 80%;
+    }
+    .hero-text-secondary {
+        font-size: 40px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .recentskates {
+        padding: 1%;
+    }
+    .card {
+        width: 300px;
+    }
+    .card img {
+        width: 300px;
+    }
+    .card-text-container {
+        width: 260px;
+        padding: auto;
+    }
+}
+
+@media (max-width: 812px) {
+    .cuztomizeContainer {
+        flex-direction: column;
+    }
+    .Controls {
+        width: 100%;
+        padding: 0;
+    }
+    #menu-button {
+        width: 20vw;
+    }
+}
+
+footer div {
+    margin: 0;
+    padding: 0;
+}
+
+footer div label {
+    color: #6C5CCC;
+}
+
+.slider {
+    margin: 20px 0;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #6C5CCC;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #6C5CCC;
+    cursor: pointer;
+}

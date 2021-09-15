@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Skate shop</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span>SkateShop</span>
+        </div>
+        <span id="menu-button">Menu</span>
+    </nav>
+
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/customize.html">Create a skate</a></li>
+            <li><a href="/#shop">Shop</a></li>
+        </ul>
+    </div>
+    <div class="cuztomizeContainer">
+        <canvas id="c"></canvas>
+        <div class="Controls">
+            <div class="controlsContainer">
+                <div class="wheelPicker">
+                    <span>Wheel's color</span>
+                    <div class="cp_wrapper">
+                        <input id="wheel" type="color" value="#6C5CCC">
+                    </div>
+                </div>
+                <div class="wheelPicker">
+                    <span>Truck 's color</span>
+                    <div class="cp_wrapper">
+                        <input id="truck" type="color" value="#6C5CCC">
+                    </div>
+                </div>
+                <div class="wheelPicker">
+                    <span>Nut's color</span>
+                    <div class="cp_wrapper">
+                        <input id="nut" type="color" value="#6C5CCC">
+                    </div>
+                </div>
+                <div class="wheelPicker">
+                    <span>Screw's color</span>
+                    <div class="cp_wrapper">
+                        <input id="screw" type="color" value="#6C5CCC">
+                    </div>
+                </div>
+                <div class="wheelPicker">
+                    <span>Rubber's color</span>
+                    <div class="cp_wrapper">
+                        <input id="rubber" type="color" value="#6C5CCC">
+                    </div>
+                </div>
+                <div class="wheelPicker">
+                    <span>Valero's color</span>
+                    <div class="cp_wrapper">
+                        <input id="valero" type="color" value="#6C5CCC">
+                    </div>
+                </div>
+                <input id="img" type="file" class="custom-file-input">
+                <div class="sliderContainer">
+                    <label>Slide image horizonal</label>
+                    <input id="offsetX" type="range" min="-50" max="50" class="slider">
+                </div>
+                <div class="sliderContainer">
+                    <label>Slide image vertical</label>
+                    <input id="offsetY" type="range" min="-50" max="50" class="slider">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/customize.js"></script>
+</body>
+
+</html>
